@@ -1,10 +1,8 @@
 /* KIWi Color Palette */
 :root {
   --kiwi-purple: #662d91;
-  --kiwi-purple-alt: #662f90;
   --kiwi-green: #99ca3c;
-  --kiwi-light-green: #d4e5aa;
-  --kiwi-light-green-alt: #d3e5aa;
+  --kiwi-orange: #F58026;
   --kiwi-dark: #231f20;
   --kiwi-white: #ffffff;
   --kiwi-gray-50: #f9fafb;
@@ -29,6 +27,7 @@
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -89,15 +88,19 @@ p {
   display: flex;
   align-items: center;
   scroll-snap-align: start;
-  scroll-margin-top: 80px;
+  scroll-snap-stop: always;
 }
 
 .section-alt {
   background-color: var(--kiwi-gray-50);
 }
 
+.section-modules {
+  background: linear-gradient(135deg, var(--kiwi-green) 0%, var(--kiwi-white) 100%);
+}
+
 .section-nutzen {
-  background: linear-gradient(135deg, var(--kiwi-purple) 0%, var(--kiwi-green) 100%);
+  background: linear-gradient(135deg, var(--kiwi-purple) 0%, var(--kiwi-orange) 100%);
   color: var(--kiwi-white);
 }
 
@@ -147,14 +150,14 @@ p {
 }
 
 .btn-secondary {
-  background-color: var(--kiwi-green);
+  background-color: var(--kiwi-orange);
   color: var(--kiwi-white);
 }
 
 .btn-secondary:hover {
-  background-color: #8ab836;
+  background-color: #e06d1a;
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(153, 202, 60, 0.3);
+  box-shadow: 0 10px 25px rgba(245, 128, 38, 0.3);
 }
 
 .btn-outline {
@@ -295,6 +298,16 @@ p {
   
   .project-details {
     flex-direction: column;
+  }
+  
+  .schools-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .legend-items {
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }
 

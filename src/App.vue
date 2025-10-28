@@ -59,32 +59,26 @@
         
         <div class="goals-grid grid grid-goals">
           <div class="goal-card card">
-            <div class="goal-icon">🧠</div>
             <h3>KI-Kompetenzen</h3>
             <p>Verstehen, Anwenden, Gestalten und Reflektieren von KI-Technologien</p>
           </div>
           <div class="goal-card card">
-            <div class="goal-icon">🔬</div>
             <h3>Entdeckendes Lernen</h3>
             <p>Förderung von <em>Inquiry-Based Learning</em> und forschendem Lernen</p>
           </div>
           <div class="goal-card card">
-            <div class="goal-icon">⚗️</div>
             <h3>MINT-Kompetenzen</h3>
             <p>Vermittlung von MINT- und Forschungskompetenzen durch praktische Projekte</p>
           </div>
           <div class="goal-card card">
-            <div class="goal-icon">🤝</div>
             <h3>Gendergerechtigkeit</h3>
             <p>Gezielte Förderung von Mädchen und Diversität in der Technik</p>
           </div>
           <div class="goal-card card">
-            <div class="goal-icon">🌐</div>
             <h3>Regionale Vernetzung</h3>
             <p>Verbindung zwischen Schulen, Forschung und Wirtschaft</p>
           </div>
           <div class="goal-card card">
-            <div class="goal-icon">🎯</div>
             <h3>UN-SDGs</h3>
             <p>Beitrag zu den UN-Nachhaltigkeitszielen 4, 5 und 10</p>
           </div>
@@ -93,7 +87,7 @@
     </section>
 
     <!-- Modules Section -->
-    <section id="modules" class="section">
+    <section id="modules" class="section section-modules">
       <div class="container">
         <div class="section-header">
           <h2>Pädagogisches Konzept</h2>
@@ -128,7 +122,7 @@
           </div>
         </div>
 
-        <div class="kiwi-day">
+        <div class="kiwi-day card">
           <div class="kiwi-day-content">
             <h3>KIWi-Tag am Campus Hagenberg</h3>
             <p>
@@ -136,53 +130,6 @@
               an dem Schüler*innen ihre Ergebnisse präsentieren, von Unternehmen lernen und 
               Einblicke in Forschung und Wirtschaft erhalten.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Projektüberblick</h2>
-          <p class="section-description">
-            KIWi ist ein gemeinsames Bildungsprojekt des Softwarepark Hagenberg (SWPH), 
-            das Künstliche Intelligenz kindgerecht in Schulen bringt.
-          </p>
-        </div>
-        
-        <div class="project-stats grid grid-4">
-          <div class="stat-card card">
-            <div class="stat-number">26</div>
-            <div class="stat-label">Monate Laufzeit</div>
-          </div>
-          <div class="stat-card card">
-            <div class="stat-number">€122.439</div>
-            <div class="stat-label">Gesamtkosten</div>
-          </div>
-          <div class="stat-card card">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Förderquote</div>
-          </div>
-          <div class="stat-card card">
-            <div class="stat-number">8</div>
-            <div class="stat-label">Beteiligte Schulen</div>
-          </div>
-        </div>
-
-        <div class="project-details">
-          <div class="detail-item">
-            <h4>Förderprogramm</h4>
-            <p>FFG <em>Talente Regional 2024</em></p>
-          </div>
-          <div class="detail-item">
-            <h4>Projektleitung</h4>
-            <p>FH Oberösterreich Forschungs- & Entwicklungs GmbH, Campus Hagenberg</p>
-          </div>
-          <div class="detail-item">
-            <h4>Fördergeber</h4>
-            <p>FFG – Österreichische Forschungsförderungsgesellschaft</p>
           </div>
         </div>
       </div>
@@ -249,26 +196,37 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Schools Section -->
+    <section id="schools" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Beteiligte Schulen</h2>
+          <p class="section-description">
+            Schulen aus der Region, die am KIWi-Projekt teilnehmen.
+          </p>
+        </div>
         
-        <div class="schools-section">
-          <h3>Beteiligte Schulen</h3>
+        <div class="card">
           <div class="schools-grid">
             <div class="school-item">
-              <div class="school-name">VS Hagenberg</div>
+              <div class="school-name">VS Hagenberg im Mühlkreis</div>
               <div class="school-tags">
-                <span class="school-tag primar">Primarstufe</span>
+                <span class="school-tag primar">Volksschule</span>
               </div>
             </div>
             <div class="school-item">
               <div class="school-name">VS Pregarten</div>
               <div class="school-tags">
-                <span class="school-tag primar">Primarstufe</span>
+                <span class="school-tag primar">Volksschule</span>
               </div>
             </div>
             <div class="school-item">
               <div class="school-name">VS Wartberg ob der Aist</div>
               <div class="school-tags">
-                <span class="school-tag primar">Primarstufe</span>
+                <span class="school-tag primar">Volksschule</span>
               </div>
             </div>
             <div class="school-item">
@@ -280,6 +238,14 @@
             <div class="school-item">
               <div class="school-name">BG/BRG Freistadt</div>
               <div class="school-tags">
+                <span class="school-tag sek1">Sekundarstufe I</span>
+                <span class="school-tag sek2">Sekundarstufe II</span>
+              </div>
+            </div>
+            <div class="school-item">
+              <div class="school-name">Bischöfliches Gymnasium Petrinum Linz</div>
+              <div class="school-tags">
+                <span class="school-tag sek1">Sekundarstufe I</span>
                 <span class="school-tag sek2">Sekundarstufe II</span>
               </div>
             </div>
@@ -290,15 +256,27 @@
               </div>
             </div>
             <div class="school-item">
-              <div class="school-name">ABZ Hagenberg</div>
-              <div class="school-tags">
-                <span class="school-tag beruf">Berufsbildung</span>
-              </div>
-            </div>
-            <div class="school-item">
-              <div class="school-name">Bischöfliches Gymnasium Petrinum Linz</div>
+              <div class="school-name">ABZ Hagenberg (Agrarbildungszentrum)</div>
               <div class="school-tags">
                 <span class="school-tag sek2">Sekundarstufe II</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="schools-legend">
+            <h4>Legende:</h4>
+            <div class="legend-items">
+              <div class="legend-item">
+                <span class="legend-tag primar">Volksschule</span>
+                <span class="legend-text">Primarstufe (ca. 6–10 Jahre)</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-tag sek1">Sekundarstufe I</span>
+                <span class="legend-text">Unterstufe (ca. 10–14 Jahre)</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-tag sek2">Sekundarstufe II</span>
+                <span class="legend-text">Oberstufe / Berufsbildung (ca. 15–19 Jahre)</span>
               </div>
             </div>
           </div>
@@ -364,7 +342,7 @@
                 anerkannten Projektkosten.
               </p>
             </div>
-            <div class="funding-card card">
+            <div class="funding-card card funding-card-highlight">
               <h3>Kooperationszuschüsse</h3>
               <p>
                 KIWi stellt <strong>10 Zuschüsse à €1.000</strong> für weitere Schulen bereit. 
@@ -373,6 +351,53 @@
               </p>
               <a href="#contact" class="btn btn-secondary">Jetzt bewerben</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projektüberblick</h2>
+          <p class="section-description">
+            KIWi ist ein gemeinsames Bildungsprojekt des Softwarepark Hagenberg (SWPH), 
+            das Künstliche Intelligenz kindgerecht in Schulen bringt.
+          </p>
+        </div>
+        
+        <div class="project-stats grid grid-4">
+          <div class="stat-card card">
+            <div class="stat-number">26</div>
+            <div class="stat-label">Monate Laufzeit</div>
+          </div>
+          <div class="stat-card card">
+            <div class="stat-number">€122.439</div>
+            <div class="stat-label">Gesamtkosten</div>
+          </div>
+          <div class="stat-card card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Förderquote</div>
+          </div>
+          <div class="stat-card card">
+            <div class="stat-number">8</div>
+            <div class="stat-label">Beteiligte Schulen</div>
+          </div>
+        </div>
+
+        <div class="project-details">
+          <div class="detail-item">
+            <h4>Förderprogramm</h4>
+            <p>FFG <em>Talente Regional 2024</em></p>
+          </div>
+          <div class="detail-item">
+            <h4>Projektleitung</h4>
+            <p>FH Oberösterreich Forschungs- & Entwicklungs GmbH, Campus Hagenberg</p>
+          </div>
+          <div class="detail-item">
+            <h4>Fördergeber</h4>
+            <p>FFG – Österreichische Forschungsförderungsgesellschaft</p>
           </div>
         </div>
       </div>
@@ -415,6 +440,16 @@
       </div>
     </section>
 
+    <!-- Back to Top Button -->
+    <button 
+      v-show="showBackToTop" 
+      @click="scrollToTop" 
+      class="back-to-top"
+      :class="{ 'visible': showBackToTop }"
+    >
+      ↑
+    </button>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -440,6 +475,7 @@ export default {
     return {
       activeTab: 0,
       headerColor: this.getRandomHeaderColor(),
+      showBackToTop: false,
       schoolLevels: [
         {
           name: 'Volksschule',
@@ -511,9 +547,24 @@ export default {
   },
   methods: {
     getRandomHeaderColor() {
-      const colors = ['var(--kiwi-purple)', 'var(--kiwi-green)', 'var(--kiwi-light-green)'];
+      const colors = ['var(--kiwi-purple)', 'var(--kiwi-orange)', 'var(--kiwi-green)'];
       return colors[Math.floor(Math.random() * colors.length)];
+    },
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    },
+    handleScroll() {
+      this.showBackToTop = window.scrollY > 300;
     }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 }
 </script>
@@ -572,6 +623,7 @@ export default {
   display: flex;
   align-items: center;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .hero-content {
@@ -684,8 +736,18 @@ export default {
 }
 
 .goal-icon {
-  font-size: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
   margin-bottom: 1rem;
+  color: var(--kiwi-purple);
+  background: var(--kiwi-gray-100);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
 }
 
 /* Modules Styles */
@@ -733,15 +795,17 @@ export default {
 
 /* KIWi Day */
 .kiwi-day {
-  background: linear-gradient(135deg, var(--kiwi-purple), var(--kiwi-purple-alt));
-  color: var(--kiwi-white);
-  padding: 3rem;
-  border-radius: 1rem;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .kiwi-day h3 {
+  color: var(--kiwi-purple);
   margin-bottom: 1rem;
+}
+
+.kiwi-day p {
+  color: var(--kiwi-dark);
 }
 
 /* Partners Styles */
@@ -761,7 +825,7 @@ export default {
 .partner-list {
   display: grid;
   gap: 1rem;
-  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .partner-item {
@@ -772,8 +836,8 @@ export default {
   background: var(--kiwi-white);
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 100%;
-  min-height: 100px;
+  height: 120px;
+  min-height: 120px;
 }
 
 .partner-logo {
@@ -821,7 +885,8 @@ export default {
 
 .schools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -856,20 +921,21 @@ export default {
 }
 
 .school-tag {
-  padding: 0.25rem 0.5rem;
+  padding: 0.125rem 0.375rem;
   border-radius: 0.25rem;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 0.625rem;
+  font-weight: 500;
   text-transform: uppercase;
+  opacity: 0.8;
 }
 
 .school-tag.primar {
-  background-color: var(--kiwi-light-green);
-  color: var(--kiwi-dark);
+  background-color: var(--kiwi-green);
+  color: var(--kiwi-white);
 }
 
 .school-tag.sek1 {
-  background-color: var(--kiwi-green);
+  background-color: var(--kiwi-orange);
   color: var(--kiwi-white);
 }
 
@@ -878,9 +944,58 @@ export default {
   color: var(--kiwi-white);
 }
 
-.school-tag.beruf {
-  background-color: var(--kiwi-gray-600);
+.schools-legend {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--kiwi-gray-200);
+}
+
+.schools-legend h4 {
+  color: var(--kiwi-purple);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.legend-items {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-tag {
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.625rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.legend-tag.primar {
+  background-color: var(--kiwi-green);
   color: var(--kiwi-white);
+}
+
+.legend-tag.sek1 {
+  background-color: var(--kiwi-orange);
+  color: var(--kiwi-white);
+}
+
+.legend-tag.sek2 {
+  background-color: var(--kiwi-purple);
+  color: var(--kiwi-white);
+}
+
+.legend-text {
+  font-size: 0.875rem;
+  color: var(--kiwi-gray-600);
 }
 
 /* Benefits Styles */
@@ -915,6 +1030,22 @@ export default {
   margin-bottom: 1rem;
 }
 
+.funding-card-highlight {
+  background: linear-gradient(135deg, var(--kiwi-purple) 0%, var(--kiwi-orange) 100%);
+  color: var(--kiwi-white);
+  border: 3px solid var(--kiwi-orange);
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(102, 45, 145, 0.3);
+}
+
+.funding-card-highlight h3 {
+  color: var(--kiwi-white);
+}
+
+.funding-card-highlight p {
+  color: var(--kiwi-white);
+}
+
 /* Contact Styles */
 .contact-content {
   display: grid;
@@ -943,6 +1074,44 @@ export default {
 .funding-notice h3 {
   color: var(--kiwi-green);
   margin-bottom: 1rem;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background: var(--kiwi-purple);
+  color: var(--kiwi-white);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(102, 45, 145, 0.3);
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  z-index: 1000;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--kiwi-orange);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 45, 145, 0.4);
+}
+
+.back-to-top:active {
+  transform: translateY(0);
 }
 
 /* Footer Styles */
