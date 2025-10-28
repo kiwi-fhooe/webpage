@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Header -->
-    <header class="header" :style="{ backgroundColor: headerColor }">
+    <header class="header">
       <nav class="nav">
         <div class="container">
           <div class="nav-content">
@@ -21,21 +21,21 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" :style="{ backgroundColor: headerColor }">
       <div class="container">
         <div class="hero-content">
           <div class="hero-text">
             <h1 class="hero-title fade-in-up">
               KI & Wissenschaft:<br>
-              <span class="text-gradient">KI-Workshops für Bildungseinrichtungen</span>
+              <span class="hero-subtitle">KI-Workshops für Bildungseinrichtungen</span>
             </h1>
             <p class="hero-description fade-in-up">
               KIWi bringt Künstliche Intelligenz kindgerecht in Schulen. 
               Wir fördern kritisches Denken und wecken Begeisterung für Forschung und Technik.
             </p>
             <div class="hero-buttons fade-in-up">
-              <a href="#about" class="btn btn-primary">Mehr erfahren</a>
-              <a href="#contact" class="btn btn-outline">Kontakt aufnehmen</a>
+              <a href="#goals" class="btn btn-hero-primary">Mehr erfahren</a>
+              <a href="#contact" class="btn btn-hero-outline">Kontakt aufnehmen</a>
             </div>
           </div>
           <div class="hero-visual">
@@ -57,7 +57,7 @@
           </p>
         </div>
         
-        <div class="goals-grid grid grid-3">
+        <div class="goals-grid grid grid-goals">
           <div class="goal-card card">
             <div class="goal-icon">🧠</div>
             <h3>KI-Kompetenzen</h3>
@@ -204,20 +204,20 @@
             <h3>Forschung & Bildung</h3>
             <div class="partner-list">
               <div class="partner-item">
-                <div class="partner-logo">🏛️</div>
+                <div class="partner-logo">FH</div>
                 <div class="partner-info">
                   <div class="partner-name">FH Oberösterreich, Campus Hagenberg</div>
                   <div class="partner-role">(Projektleitung)</div>
                 </div>
               </div>
               <div class="partner-item">
-                <div class="partner-logo">🔬</div>
+                <div class="partner-logo">RISC</div>
                 <div class="partner-info">
                   <div class="partner-name">RISC Software GmbH</div>
                 </div>
               </div>
               <div class="partner-item">
-                <div class="partner-logo">💻</div>
+                <div class="partner-logo">SCCH</div>
                 <div class="partner-info">
                   <div class="partner-name">Software Competence Center Hagenberg (SCCH)</div>
                 </div>
@@ -229,19 +229,19 @@
             <h3>Unternehmen</h3>
             <div class="partner-list">
               <div class="partner-item">
-                <div class="partner-logo">📱</div>
+                <div class="partner-logo">BS</div>
                 <div class="partner-info">
                   <div class="partner-name">bluesource – mobile solutions gmbh</div>
                 </div>
               </div>
               <div class="partner-item">
-                <div class="partner-logo">🚗</div>
+                <div class="partner-logo">PI</div>
                 <div class="partner-info">
                   <div class="partner-name">Porsche Informatik GmbH</div>
                 </div>
               </div>
               <div class="partner-item">
-                <div class="partner-logo">🥽</div>
+                <div class="partner-logo">R2R</div>
                 <div class="partner-info">
                   <div class="partner-name">Rise2Reality e.U.</div>
                 </div>
@@ -253,21 +253,61 @@
         <div class="schools-section">
           <h3>Beteiligte Schulen</h3>
           <div class="schools-grid">
-            <div class="school-item">VS Hagenberg</div>
-            <div class="school-item">VS Pregarten</div>
-            <div class="school-item">VS Wartberg ob der Aist</div>
-            <div class="school-item">MS Pregarten</div>
-            <div class="school-item">BG/BRG Freistadt</div>
-            <div class="school-item">BORG Hagenberg</div>
-            <div class="school-item">ABZ Hagenberg</div>
-            <div class="school-item">Bischöfliches Gymnasium Petrinum Linz</div>
+            <div class="school-item">
+              <div class="school-name">VS Hagenberg</div>
+              <div class="school-tags">
+                <span class="school-tag primar">Primarstufe</span>
+              </div>
+            </div>
+            <div class="school-item">
+              <div class="school-name">VS Pregarten</div>
+              <div class="school-tags">
+                <span class="school-tag primar">Primarstufe</span>
+              </div>
+            </div>
+            <div class="school-item">
+              <div class="school-name">VS Wartberg ob der Aist</div>
+              <div class="school-tags">
+                <span class="school-tag primar">Primarstufe</span>
+              </div>
+            </div>
+            <div class="school-item">
+              <div class="school-name">MS Pregarten</div>
+              <div class="school-tags">
+                <span class="school-tag sek1">Sekundarstufe I</span>
+              </div>
+            </div>
+            <div class="school-item">
+              <div class="school-name">BG/BRG Freistadt</div>
+              <div class="school-tags">
+                <span class="school-tag sek2">Sekundarstufe II</span>
+              </div>
+            </div>
+            <div class="school-item">
+              <div class="school-name">BORG Hagenberg</div>
+              <div class="school-tags">
+                <span class="school-tag sek2">Sekundarstufe II</span>
+              </div>
+            </div>
+            <div class="school-item">
+              <div class="school-name">ABZ Hagenberg</div>
+              <div class="school-tags">
+                <span class="school-tag beruf">Berufsbildung</span>
+              </div>
+            </div>
+            <div class="school-item">
+              <div class="school-name">Bischöfliches Gymnasium Petrinum Linz</div>
+              <div class="school-tags">
+                <span class="school-tag sek2">Sekundarstufe II</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Benefits Section -->
-    <section class="section">
+    <section class="section section-nutzen">
       <div class="container">
         <div class="section-header">
           <h2>Nutzen</h2>
@@ -276,7 +316,7 @@
           </p>
         </div>
 
-        <div class="benefits-grid grid grid-3">
+        <div class="benefits-grid grid grid-benefits">
           <div class="benefit-card card">
             <h3>Für Schüler*innen</h3>
             <ul>
@@ -485,6 +525,7 @@ export default {
   top: 0;
   left: 0;
   right: 0;
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--kiwi-gray-200);
   z-index: 1000;
@@ -527,11 +568,10 @@ export default {
 
 /* Hero Styles */
 .hero {
-  background: linear-gradient(135deg, var(--kiwi-light-green) 0%, var(--kiwi-white) 100%);
-  padding: 8rem 0 4rem;
   min-height: 100vh;
   display: flex;
   align-items: center;
+  scroll-snap-align: start;
 }
 
 .hero-content {
@@ -543,19 +583,20 @@ export default {
 
 .hero-title {
   margin-bottom: 1.5rem;
+  color: var(--kiwi-white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.text-gradient {
-  background: linear-gradient(135deg, var(--kiwi-purple), var(--kiwi-green));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.hero-subtitle {
+  color: var(--kiwi-white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-description {
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  color: var(--kiwi-gray-600);
+  color: var(--kiwi-white);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero-buttons {
@@ -570,14 +611,8 @@ export default {
 }
 
 .hero-icon {
-  width: 300px;
+  width: 400px;
   height: auto;
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
 }
 
 /* Section Styles */
@@ -612,10 +647,15 @@ export default {
 
 /* Project Details */
 .project-details {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  justify-content: space-between;
   gap: 2rem;
   margin-top: 3rem;
+}
+
+.detail-item {
+  flex: 1;
+  text-align: center;
 }
 
 .detail-item h4 {
@@ -626,6 +666,21 @@ export default {
 /* Goals Styles */
 .goal-card {
   text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goal-card h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.goal-card p {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-bottom: 0;
 }
 
 .goal-icon {
@@ -706,6 +761,7 @@ export default {
 .partner-list {
   display: grid;
   gap: 1rem;
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .partner-item {
@@ -716,10 +772,13 @@ export default {
   background: var(--kiwi-white);
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  min-height: 100px;
 }
 
 .partner-logo {
-  font-size: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
   width: 60px;
   height: 60px;
   display: flex;
@@ -728,6 +787,7 @@ export default {
   background: var(--kiwi-gray-100);
   border-radius: 0.5rem;
   flex-shrink: 0;
+  color: var(--kiwi-purple);
 }
 
 .partner-info {
@@ -766,18 +826,61 @@ export default {
 }
 
 .school-item {
-  padding: 0.75rem 1rem;
-  background: var(--kiwi-gray-50);
+  padding: 1rem;
+  background: var(--kiwi-white);
   border-radius: 0.5rem;
   text-align: center;
   font-weight: 500;
-  border: 2px solid transparent;
+  border: 2px solid var(--kiwi-gray-200);
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .school-item:hover {
   border-color: var(--kiwi-green);
   background: var(--kiwi-light-green);
+}
+
+.school-name {
+  font-weight: 600;
+  color: var(--kiwi-dark);
+}
+
+.school-tags {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.school-tag {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.school-tag.primar {
+  background-color: var(--kiwi-light-green);
+  color: var(--kiwi-dark);
+}
+
+.school-tag.sek1 {
+  background-color: var(--kiwi-green);
+  color: var(--kiwi-white);
+}
+
+.school-tag.sek2 {
+  background-color: var(--kiwi-purple);
+  color: var(--kiwi-white);
+}
+
+.school-tag.beruf {
+  background-color: var(--kiwi-gray-600);
+  color: var(--kiwi-white);
 }
 
 /* Benefits Styles */

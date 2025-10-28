@@ -28,6 +28,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -83,11 +84,39 @@ p {
 }
 
 .section {
+  min-height: 100vh;
   padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  scroll-snap-align: start;
+  scroll-margin-top: 80px;
 }
 
 .section-alt {
   background-color: var(--kiwi-gray-50);
+}
+
+.section-nutzen {
+  background: linear-gradient(135deg, var(--kiwi-purple) 0%, var(--kiwi-green) 100%);
+  color: var(--kiwi-white);
+}
+
+.section-nutzen h2,
+.section-nutzen .section-description {
+  color: var(--kiwi-white);
+}
+
+.section-nutzen .benefit-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--kiwi-dark);
+}
+
+.section-nutzen .benefit-card h3 {
+  color: var(--kiwi-purple);
+}
+
+.section-nutzen .benefit-card li {
+  color: var(--kiwi-dark);
 }
 
 /* Buttons */
@@ -139,6 +168,30 @@ p {
   color: var(--kiwi-white);
 }
 
+.btn-hero-primary {
+  background-color: var(--kiwi-white);
+  color: var(--kiwi-purple);
+  border: 2px solid var(--kiwi-white);
+}
+
+.btn-hero-primary:hover {
+  background-color: var(--kiwi-gray-100);
+  color: var(--kiwi-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+}
+
+.btn-hero-outline {
+  background-color: transparent;
+  color: var(--kiwi-white);
+  border: 2px solid var(--kiwi-white);
+}
+
+.btn-hero-outline:hover {
+  background-color: var(--kiwi-white);
+  color: var(--kiwi-purple);
+}
+
 /* Cards */
 .card {
   background: var(--kiwi-white);
@@ -146,11 +199,26 @@ p {
   padding: 2rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3, .card h4 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.card p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 /* Grid */
@@ -163,12 +231,17 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.grid-benefits {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-4 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-goals {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 /* Animations */
@@ -199,6 +272,7 @@ p {
   
   .section {
     padding: 2rem 0;
+    min-height: 100vh;
   }
   
   .container {
@@ -208,6 +282,19 @@ p {
   .btn {
     width: 100%;
     margin-bottom: 1rem;
+  }
+  
+  .grid-goals {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  
+  .grid-benefits {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-details {
+    flex-direction: column;
   }
 }
 
