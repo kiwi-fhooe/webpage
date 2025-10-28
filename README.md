@@ -1,121 +1,109 @@
-# KIWi – KI & Wissenschaft: KI-Workshops für Bildungseinrichtungen
+# KIWi Webpage
 
-## Projektüberblick
-**KIWi** („KI & Wissenschaft“) ist ein gemeinsames Bildungsprojekt des **Softwarepark Hagenberg (SWPH)**, das Künstliche Intelligenz kindgerecht in Schulen bringt.  
-Ziel ist, Kinder und Jugendliche frühzeitig mit KI vertraut zu machen, kritisches Denken zu fördern und Begeisterung für Forschung und Technik zu wecken.
+**KIWi** („KI & Wissenschaft") ist ein gemeinsames Bildungsprojekt des **Softwarepark Hagenberg (SWPH)**, das Künstliche Intelligenz kindgerecht in Schulen bringt. Ziel ist, Kinder und Jugendliche frühzeitig mit KI vertraut zu machen, kritisches Denken zu fördern und Begeisterung für Forschung und Technik zu wecken.
 
-- **Laufzeit:** 01.06.2025 – 31.07.2027 (26 Monate)  
-- **Förderprogramm:** FFG *Talente Regional 2024*  
-- **Gesamtkosten:** €122.439  
-- **Förderquote:** 100 %  
-- **Projektleitung:** FH Oberösterreich Forschungs- & Entwicklungs GmbH, Campus Hagenberg  
-- **Fördergeber:** FFG – Österreichische Forschungsförderungsgesellschaft  
+## 🚀 Live Demo
 
----
+The webpage is deployed on GitHub Pages: [https://kiwi-fhooe.github.io/webpage/](https://kiwi-fhooe.github.io/webpage/)
 
-## Ziele des Projekts
-- Aufbau von **KI-Kompetenzen**: Verstehen, Anwenden, Gestalten, Reflektieren  
-- Förderung von **entdeckendem und forschendem Lernen** (*Inquiry-Based Learning*)  
-- Vermittlung von **MINT- und Forschungskompetenzen** durch praktische Projekte  
-- **Gendergerechtigkeit & Inklusion:** gezielte Förderung von Mädchen und Diversität  
-- **Regionale Vernetzung** zwischen Schulen, Forschung und Wirtschaft  
-- Beitrag zu den **UN-SDGs 4, 5 und 10** (Bildung, Gleichstellung, Chancengleichheit)
+## 🛠️ Development
 
----
+### Prerequisites
+- Node.js 18+ 
+- npm
 
-## Pädagogisches Konzept
-Das Projekt setzt auf drei altersgerechte **Forschungsreisen** (Volksschule, Sekundarstufe I & II).  
-Jede Reise besteht aus **Modulen**, die durch Experimentieren, Spielen, Kreativarbeit und Peer-Learning gestaltet sind.
+### Local Development
+```bash
+# Install dependencies
+npm install
 
-### Beispielmodule
+# Start development server
+npm run dev
 
-| Schulstufe | Modul | Partner |
-|-------------|--------|----------|
-| Volksschule | *Detektiv*innen der KI* | FH OÖ |
-| Volksschule | *KI oder Ich? Wer hat recht?* | Porsche Informatik |
-| Volksschule | *KI-Geschichten- & Märchenwerkstatt* | RISC |
-| Sekundarstufe I | *Wie KI dich sieht* | FH OÖ |
-| Sekundarstufe I | *KI-Baumblätterkenner* | RISC |
-| Sekundarstufe I | *Was kann KI?* | Rise2Reality |
-| Sekundarstufe I | *Entdecke das Potenzial von KI* | SCCH |
-| Sekundarstufe II | *DataDrive* | Bluesource |
-| Sekundarstufe II | *Think Twice: Deepfake & Bias in der KI* | FH OÖ |
-| Sekundarstufe II | *Forschung steckt an* | FH OÖ |
+# Build for production
+npm run build
 
-Am Ende jeder Lernreise steht der **KIWi-Tag** am Campus Hagenberg, an dem Schüler*innen ihre Ergebnisse präsentieren, von Unternehmen lernen und Einblicke in Forschung und Wirtschaft erhalten.
+# Preview production build
+npm run preview
+```
 
----
+## 📦 Deployment
 
-## Konsortium
+### Automatic Deployment (GitHub Actions)
+The webpage automatically deploys to GitHub Pages when changes are pushed to the `main` branch.
 
-### Forschung & Bildung
-- **FH Oberösterreich, Campus Hagenberg** (Projektleitung)
-- **RISC Software GmbH**
-- **Software Competence Center Hagenberg (SCCH)**
+### Manual Deployment
+```bash
+# Build and deploy to GitHub Pages
+npm run deploy
+```
 
-### Unternehmen
-- **bluesource – mobile solutions gmbh**
-- **Porsche Informatik GmbH**
-- **Rise2Reality e.U.**
+## 🎨 Features
 
+- **Responsive Design**: Works on all devices
+- **Smooth Scrolling**: Full-page sections with snap scrolling
+- **Dynamic Colors**: Random background colors on page load
+- **Interactive Elements**: Hover effects and smooth transitions
+- **Back to Top**: Floating button for easy navigation
+- **Modern UI**: Clean, professional design with KIWi branding
 
-### Beteiligte Schulen
-- VS Hagenberg  
-- VS Pregarten  
-- VS Wartberg ob der Aist  
-- MS Pregarten  
-- BG/BRG Freistadt  
-- BORG Hagenberg  
-- ABZ Hagenberg  
-- Bischöfliches Gymnasium Petrinum Linz  
+## 🏗️ Tech Stack
 
----
+- **Vue.js 3**: Frontend framework
+- **Vite**: Build tool and development server
+- **CSS3**: Styling with custom properties
+- **GitHub Pages**: Hosting platform
+- **GitHub Actions**: CI/CD pipeline
 
-## Förderung & Finanzierung
-Gefördert durch die **FFG** im Rahmen der Ausschreibung *Talente Regional 2024*.  
-**Förderquote:** 100 % der anerkannten Projektkosten.  
-**Vertragsführung:** FH Oberösterreich.
+## 📁 Project Structure
 
-### Kooperationszuschüsse
-Zur Unterstützung weiterer Schulen stellt KIWi **10 Zuschüsse à €1.000** bereit.  
-Diese können für Projekthardware, KI-Tool-Lizenzen, Exkursionen oder Expert*innen-Vorträge genutzt werden.  
-Einreichung über die Projektwebseite (*First Come, First Serve*).
+```
+webpage/
+├── .github/workflows/    # GitHub Actions
+├── public/              # Static assets
+├── src/                 # Source code
+│   ├── App.vue         # Main component
+│   ├── main.js         # Entry point
+│   └── styles/         # CSS styles
+├── dist/               # Build output
+└── package.json        # Dependencies
+```
 
----
+## 🎯 Sections
 
+1. **Hero**: Dynamic background with KIWi branding
+2. **Goals**: Project objectives and targets
+3. **Modules**: Educational modules by school level
+4. **Partners**: Consortium members and collaborators
+5. **Schools**: Participating educational institutions
+6. **Benefits**: Value proposition for all stakeholders
+7. **Funding**: Project funding and cooperation grants
+8. **Contact**: Project contact information
 
+## 🔧 Configuration
 
----
+### GitHub Pages Setup
+1. Go to repository Settings → Pages
+2. Select "GitHub Actions" as source
+3. The workflow will automatically deploy on push to main
 
-## Nutzen
+### Custom Domain (Optional)
+To use a custom domain:
+1. Add `CNAME` file to `public/` directory
+2. Configure DNS settings with your domain provider
+3. Update GitHub Pages settings
 
-### Für Schüler*innen
-- Verständnis und kritische Reflexion von KI  
-- Motivation für MINT-Berufe und Forschung  
-- Stärkung sozialer und methodischer Kompetenzen  
-- Praxisnahe Einblicke in regionale Unternehmen und Forschungseinrichtungen  
+## 📝 License
 
-### Für Pädagog*innen
-- Zugang zu didaktisch aufbereiteten Lehrmaterialien  
-- Unterstützung bei der Einbindung von KI in den Unterricht  
-- Kooperation mit F&E-Expert*innen und regionale Vernetzung  
+This project is licensed under the ISC License.
 
-### Für die Region
-- Förderung technologischer Bildung im Mühlviertel  
-- Sichtbarkeit des Softwarepark Hagenberg als Innovationsstandort  
-- Nachhaltige Verankerung von Forschung, Bildung und Wirtschaft  
+## 🤝 Contributing
 
----
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-## Kontakt
-**Projektleitung:**  
-FH Oberösterreich Forschungs- & Entwicklungs GmbH  
-Campus Hagenberg  
+## 📞 Contact
 
-**Projektleiter:** *Samuel Zühlke, MSc*  
-📧 samuel.zuehlke@fh-hagenberg.at  
-
----
-
-**Förderhinweis:**  
-Dieses Projekt wird im Rahmen der FFG-Ausschreibung *Talente Regional 2024* aus Mitteln der Republik Österreich gefördert.
+For questions about the KIWi project, please contact the Softwarepark Hagenberg team.
