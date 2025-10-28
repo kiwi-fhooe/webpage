@@ -1,0 +1,28 @@
+{
+  "name": "webpage",
+  "version": "1.0.0",
+  "description": "**KIWi** („KI & Wissenschaft“) ist ein gemeinsames Bildungsprojekt des **Softwarepark Hagenberg (SWPH)**, das Künstliche Intelligenz kindgerecht in Schulen bringt.   Ziel ist, Kinder und Jugendliche frühzeitig mit KI vertraut zu machen, kritisches Denken zu fördern und Begeisterung für Forschung und Technik zu wecken.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiwi-fhooe/webpage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kiwi-fhooe/webpage/issues"
+  },
+  "homepage": "https://github.com/kiwi-fhooe/webpage#readme",
+  "dependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.1.12",
+    "vue": "^3.5.22"
+  }
+}
